@@ -1,0 +1,203 @@
+/*------------------Tag Selector------------------*/
+body {
+  background-color: #f2f6fc;
+}
+
+a:link {
+  text-decoration: none;
+}
+/*------------------Class Selector------------------*/
+.container {
+  margin-top: 2%;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.logo {
+  padding-bottom: 10%;
+}
+.app-name {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.social-icon {
+  color: blue;
+  background-color: #f5f9fc;
+  padding: 20px;
+  border-radius: 50%;
+  margin-top: 2%;
+  margin-right: 4%;
+  margin-left: 3%;
+}
+
+/*----------Profile Section------------*/
+.card {
+  background-color: #f5f9fc;
+  text-align: center;
+  border-radius: 15px;
+}
+.profile-pic {
+  width: 35%;
+  border-radius: 50%;
+}
+.name {
+  text-align: center;
+  margin-left: 8%;
+}
+.form-check {
+  margin-left: 12%;
+  margin-top: -5%;
+}
+
+.conversation-list {
+  margin-top: 10%;
+}
+.badge-pill {
+  font-size: 1rem;
+  margin-left: 6%;
+  background-color: #eaefef;
+  color: #000;
+}
+
+.list-icon {
+  margin-top: 2%;
+  float: right;
+}
+.list-group-item {
+  border: 0;
+  background-color: #f2f6fc;
+}
+.white {
+  border: 0;
+  background-color: #fff;
+}
+.rounded-circle {
+  padding: 2%;
+  margin-left: 4%;
+  border-radius: 50%;
+  width: 30%;
+}
+.list-name {
+  color: #000;
+}
+/*-------------------------------------MIDDLE SECTION--------------------------------*/
+.chat {
+  background-color: #f2f6fc;
+  border-radius: 25px;
+}
+
+.chat-area {
+  background-color: #fff;
+}
+
+/*-------------------------------------Right SECTION--------------------------------*/
+
+/*-------------------------Small Box 1----------------------*/
+.small-box {
+  font-weight: bold;
+  border: 0;
+  color: #316dec;
+  background-color: #b6caff;
+  width: 100px;
+}
+
+.small-box-icon {
+  justify-content: center;
+  background-color: #7496f5;
+}
+
+.small-box-text {
+  font-weight: lighter;
+  margin-left: 25px;
+}
+
+/*-------------------------Small Box 2----------------------*/
+
+.small-box2 {
+  font-weight: bold;
+  border: 0;
+  color: #58fce9;
+  background-color: #b2f5ed;
+  width: 100px;
+}
+.small-box-icon2 {
+  color: #58fce9;
+  background-color: #9cfae9;
+  justify-content: center;
+}
+
+.small-box-text2 {
+  font-weight: lighter;
+  margin-left: 25px;
+}
+
+/*-------------------------Small Box 3----------------------*/
+
+.small-box3 {
+  font-weight: bold;
+  border: 0;
+  color: #846ef0;
+  background-color: #d3cae6;
+  width: 100px;
+}
+.small-box-icon3 {
+  color: #846ef0;
+  background-color: #b1a1ff;
+  justify-content: center;
+}
+
+.small-box-text3 {
+  font-weight: lighter;
+  margin-left: 25px;
+}
+
+/*-------------------------Small Box 4----------------------*/
+
+.small-box4 {
+  font-weight: bold;
+  border: 0;
+  color: #fca675;
+  background-color: #f7dac9;
+  width: 100px;
+}
+.small-box-icon4 {
+  color: #fca675;
+  background-color: #f7c8ad;
+  justify-content: center;
+}
+
+.small-box-text4 {
+  font-weight: lighter;
+  margin-left: 25px;
+}
+
+/*-----------------------------Client---------------------*/
+.client {
+  background-color: #f9f5fc;
+  border: 1px solid #d3e1ff;
+  border-radius: 10px;
+}
+
+/*--------------------------Progress Bar----------------*/
+.progressbar {
+  color: lightgray;
+}
+
+.days {
+  font-weight: lighter;
+}
+/*------------------ID Selector------------------*/
+
+/*------------------Media Query------------------*/
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
+}
