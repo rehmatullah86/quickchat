@@ -1,0 +1,499 @@
+<!-- 
+Developer: Rehmatullah
+Date: 5 Dec 2022
+Purpose: To implement the QuickChat using CSS and Bootstrap Grid system
+Organization: Programmers Forces
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quick Chat</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <!--------------Logo Section-------------->
+          <div class="logo">
+            <i class="social-icon fa-solid fa-bolt"></i>
+            <a class="app-name" href="">QuickChat</a>
+          </div>
+          <div class="profile">
+            <div class="card">
+              <div class="card-body">
+                <img class="profile-pic" src="assets/images/profile1.jpg" />
+                <div class="name">
+                  <h5>
+                    Bill Braddford <span><i class="fa-solid fa-gear"></i></span>
+                  </h5>
+                </div>
+                <p>Lead UX/UI Designer</p>
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="flexSwitchCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexSwitchCheckChecked"
+                    >Active</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--------------------------Conversation List------------------------>
+          <div class="conversation-list">
+            <h6>
+              Active Conversations<span class="badge badge-pill">4</span>
+              <i class="fas fa-caret-up list list-icon"></i>
+            </h6>
+            <ul class="list-group">
+              <!-----------------------------1--------------------->
+              <li class="list-group-item">
+                <img
+                  class="rounded-circle"
+                  src="assets/images/profile2.jpg"
+                  alt=""
+                />
+                <a class="list-name" href="">Henry Broad</a>
+              </li>
+              <!-----------------------------2--------------------->
+              <li class="list-group-item white">
+                <img
+                  class="rounded-circle"
+                  src="assets/images/profile3.jpg"
+                  alt=""
+                />
+                <a class="list-name" href="">Martha Curtis </a>
+                <span
+                  class="badge badge-pill mt-3 float-end bg-danger text-white"
+                  >2</span
+                >
+              </li>
+              <!-----------------------------3--------------------->
+              <li class="list-group-item white">
+                <img
+                  class="rounded-circle"
+                  src="assets/images/profile4.jpg"
+                  alt=""
+                />
+                <a class="list-name" href="">Philip Tucker</a>
+              </li>
+              <!-----------------------------4--------------------->
+              <li class="list-group-item white">
+                <img
+                  class="rounded-circle"
+                  src="assets/images/profile5.jpg"
+                  alt=""
+                />
+                <a class="list-name" href="">Christine Reid</a>
+              </li>
+              <!-----------------------------5--------------------->
+              <li class="list-group-item white">
+                <img
+                  class="rounded-circle"
+                  src="assets/images/profile6.jpg"
+                  alt=""
+                />
+                <a class="list-name" href="">Jerry Guzman</a>
+              </li>
+              <!-----------------------------6--------------------->
+              <li class="list-group-item white">
+                <img
+                  class="rounded-circle"
+                  src="assets/images/profile7.jpg"
+                  alt=""
+                />
+                <a class="list-name" href="">Russel Williams</a>
+              </li>
+            </ul>
+            <h6>
+              Archived Conversations<span class="badge badge-pill">7</span>
+              <i class="fas fa-caret-down list list-icon"></i>
+            </h6>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <!---------------------------------Chat Convesation------------------------>
+
+          <!------------------------------Right Side----------------------------->
+          <div class="container chat-area mt-3">
+            <div class="chat">
+              <!-----------------------------------Right Message 1------------------->
+              <div class="d-flex flex-row justify-content-end pt-2 pr-4 pb-0">
+                <div>
+                  <p class="p-3 ml-3 me-3 mb-1 text-white rounded-3 bg-dark">
+                    Hi Hennry!!
+                  </p>
+                  <p class="small me-3 rounded-3 text-muted float-end">
+                    9h ago
+                  </p>
+                </div>
+                <img
+                  class="profile-pic"
+                  src="assets/images/profile4.jpg"
+                  alt="avatar 1"
+                  style="width: 10%; height: 100%"
+                />
+              </div>
+              <!-----------------------------------Right Message 2------------------->
+              <div class="d-flex flex-row justify-content-end pt-2 pr-4">
+                <div>
+                  <p class="p-3 ml-3 me-3 mb-1 text-white rounded-3 bg-dark">
+                    How can I help you today?
+                  </p>
+                  <p class="small me-3 mb-3 rounded-3 text-muted float-end">
+                    9h ago
+                  </p>
+                </div>
+                <img
+                  class="profile-pic"
+                  src="assets/images/profile4.jpg"
+                  alt="avatar 1"
+                  style="width: 10%; height: 100%"
+                />
+              </div>
+
+              <!-----------------------------------Left Message 1------------------->
+              <div
+                class="d-flex flex-row justify-content-start content-center pt-2 pl-4"
+              >
+                <img
+                  class="profile-pic"
+                  src="assets/images/profile7.jpg"
+                  alt="avatar 1"
+                  style="width: 10%; height: 100%"
+                />
+                <span class="online_icon"></span>
+
+                <div>
+                  <p
+                    class="p-3 ms-3 mb-1 rounded-3"
+                    style="background-color: #fff"
+                  >
+                    Hi Bill,nice to meet you
+                  </p>
+                  <p class="small ms-3 mb-3 rounded-3 text-muted float-start">
+                    9h ago
+                  </p>
+                </div>
+              </div>
+              <!----------------------------------- Left Message 2------------------->
+
+              <div
+                class="d-flex flex-row justify-content-start content-center pt-2 pl-4"
+              >
+                <img
+                  class="profile-pic"
+                  src="assets/images/profile7.jpg"
+                  alt="avatar 1"
+                  style="width: 10%; height: 100%"
+                />
+                <span class="online_icon"></span>
+
+                <div>
+                  <p
+                    class="p-3 ms-3 mb-1 rounded-3"
+                    style="background-color: #fff"
+                  >
+                    Hope you are doing fine.
+                  </p>
+                  <p class="small ms-3 mb-3 rounded-3 text-muted float-start">
+                    9h ago
+                  </p>
+                </div>
+              </div>
+
+              <!-----------------------------------Right Message 2------------------->
+              <div class="d-flex flex-row justify-content-end pt-5 pr-4">
+                <div>
+                  <p class="p-3 ml-3 me-3 mb-1 text-white rounded-3 bg-dark">
+                    I am good thanks for asking
+                  </p>
+                  <p class="small me-3 mb-3 rounded-3 text-muted float-end">
+                    9h ago
+                  </p>
+                </div>
+                <img
+                  class="profile-pic"
+                  src="assets/images/profile4.jpg"
+                  alt="avatar 1"
+                  style="width: 10%; height: 100%"
+                />
+              </div>
+
+              <!----------------------------------- Left Message 3------------------->
+
+              <div
+                class="d-flex flex-row justify-content-start content-center pt-2 pl-4"
+              >
+                <img
+                  class="profile-pic"
+                  src="assets/images/profile7.jpg"
+                  alt="avatar 1"
+                  style="width: 10%; height: 100%"
+                />
+                <span class="online_icon"></span>
+
+                <div>
+                  <p
+                    class="p-3 ms-3 mb-1 rounded-3"
+                    style="background-color: #fff"
+                  >
+                    I am intersted to know more about you
+                  </p>
+                  <p class="small ms-3 mb-3 rounded-3 text-muted float-start">
+                    9h ago
+                  </p>
+                </div>
+              </div>
+
+              <!-----------------------------------Right Message 2------------------->
+              <div class="d-flex flex-row justify-content-end pt-5 pr-4">
+                <div>
+                  <p class="p-3 ml-3 me-3 mb-1 text-white rounded-3 bg-dark">
+                    Sure please check the link below<br />
+                    <a href="#">http://mazepixel.com/profile</a>
+                  </p>
+                  <p class="small me-3 mb-3 rounded-3 text-muted float-end">
+                    9h ago
+                  </p>
+                </div>
+                <img
+                  class="profile-pic"
+                  src="assets/images/profile4.jpg"
+                  alt="avatar 1"
+                  style="width: 10%; height: 100%"
+                />
+              </div>
+
+              <!----------------------------------- Left Message 3------------------->
+
+              <div
+                class="d-flex flex-row justify-content-start content-center pt-2 pl-4"
+              >
+                <img
+                  class="profile-pic"
+                  src="assets/images/profile7.jpg"
+                  alt="avatar 1"
+                  style="width: 10%; height: 100%"
+                />
+                <span class="online_icon"></span>
+
+                <div>
+                  <p
+                    class="p-3 ms-3 mb-1 rounded-3"
+                    style="background-color: #fff"
+                  >
+                    Awesome we will get in touch
+                  </p>
+                  <p class="ms-3 mb-3 rounded-3 text-muted float-start">
+                    9h ago
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-row justify-content-start content-center pt-2 pl-4"
+              >
+                <img
+                  class="profile-pic"
+                  src="assets/images/profile7.jpg"
+                  alt="avatar 1"
+                  style="width: 10%; height: 100%"
+                />
+                <span class="online_icon"></span>
+
+                <div>
+                  <p
+                    class="p-3 ms-3 mb-1 rounded-3"
+                    style="background-color: #fff"
+                  >
+                    I am intersted to know more about you
+                  </p>
+                  <p class="small ms-3 mb-3 rounded-3 text-muted float-start">
+                    9h ago
+                  </p>
+                </div>
+              </div>
+              <!--------------------End of Messages----------------->
+              <div class="row pb-3">
+                <div class="col-sm-1">
+                  <button type="button" class="btn">
+                    <i class="fa-solid fa-paperclip"></i>
+                  </button>
+                </div>
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    style="border: 1px solid gray"
+                    class="form-control-plaintext bg-white rounded"
+                    placeholder="   Enter Your message here"
+                  />
+                </div>
+                <div class="col-sm-3">
+                  <button type="button" class="btn btn-primary">
+                    Send <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!------------------------------------------End of Middle Section--------------------------------->
+        </div>
+        <div class="col-sm-3">
+          <!-----------------------------------------Right Side--------------------->
+
+          <!------------------------------------Contact Information----------------->
+          <div class="d-flex flex-column profile card mt-4">
+            <div class="card-body">
+              <img class="profile-pic" src="assets/images/HB.png" />
+              <div class="d-flex ms-3 mt-3">
+                <i class="fa-regular fa-envelope"></i>
+                <h6 class="ms-3">henryboyd@gmail.com</h6>
+              </div>
+              <div class="d-flex ms-3">
+                <i class="fa-regular fa-circle-user"></i>
+                <h6 class="ms-3">Henry Boyd</h6>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-primary">
+                  Archive <i class="fa-solid fa-box-archive"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!------------------------------------End of Contact Information----------------->
+          <div class="card pb-3 mt-3">
+            <div class="d-flex ms-3">
+              <button class="button mt-3 p-3 p-1 rounded-3 small-box">
+                <span
+                  ><i class="fa-regular fa-clock p-1 small-box-icon"></i></span
+                >13h<br />
+                <p class="text-secondary small-box-text">time</p>
+              </button>
+              <button class="button mt-3 ms-4 p-1 rounded-3 small-box2">
+                <span
+                  ><i
+                    class="fa-solid fa-user-group p-1 small-box-icon2"
+                  ></i></span
+                >188<br />
+                <p class="fs-6 ms-3 text-secondary small-box-text">Atendeed</p>
+              </button>
+            </div>
+            <div class="d-flex ms-3">
+              <button class="button mt-3 pt-3 p-1 rounded-3 small-box3">
+                <span
+                  ><i
+                    class="fa-regular fa-calendar-check p-1 small-box-icon3"
+                  ></i></span
+                >119<br />
+                <p class="ms-3 text-secondary small-box-text3">Meetings</p>
+              </button>
+              <button class="button mt-3 pt-3 ms-4 rounded-3 small-box4">
+                <span
+                  ><i
+                    class="fa-regular fa-calendar-xmark p-1 small-box-icon4"
+                  ></i></span
+                >41<br />
+                <p class="fs-6 ms-3 text-secondary small-box-text4">Rejected</p>
+              </button>
+            </div>
+            <div class="d-flex justify-content-between mt-3 ms-1 me-1">
+              <h5>Current week</h5>
+              <p>Activity</p>
+            </div>
+            <div
+              class="d-inline-flex justify-content-between align-items-end p-2"
+            >
+              <i class="fa-solid fa-exclamation fa-6x progressbar"></i>
+              <i class="fa-solid fa-exclamation fa-8x text-primary"></i>
+              <i class="fa-solid fa-exclamation fa-6x progressbar"></i>
+              <i class="fa-solid fa-exclamation fa-5x progressbar"></i>
+              <i class="fa-solid fa-exclamation fa-4x progressbar"></i>
+              <i class="fa-solid fa-exclamation fa-3x progressbar"></i>
+              <i class="fa-solid fa-exclamation fa-3x progressbar"></i>
+            </div>
+            <div
+              class="d-inline-flex justify-content-between align-items-end ms-2"
+            >
+              <h6 class="days">MON</h6>
+              <h6 class="days">TUE</h6>
+              <h6 class="days">WED</h6>
+              <h6 class="days">THU</h6>
+              <h6 class="days">FRI</h6>
+              <h6 class="days">SAT</h6>
+              <h6 class="days">SUN</h6>
+            </div>
+            <!---------------------------------------Last Part------------------>
+          </div>
+          <div class="pt-3 mt-5 client">
+            <div class="text-center p-2 m-2">
+              <h6>Onboard Clients</h6>
+              <p>Share the Links with Prospects and discuss all stuff</p>
+              <div class="d-flex justify-content-center pb-3">
+                <button type="button" class="btn btn-primary">
+                  Copylink <i class="fa-solid fa-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center">
+      <p>@Copyright - Developer: Rehmatullah| Programmers Force</p>
+    </footer>
+  </body>
+</html>
